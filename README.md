@@ -2,9 +2,11 @@
 
 ## Infrastructure description 
 
--The application contains frontend , backend and relational database 
+- The application contains frontend , backend and relational database 
 
--The frontend is Angular - ionic application and is hosted on S3 bucket on AWS cloud
+- The frontend is Angular - ionic application and is hosted on S3 bucket on AWS cloud
+
+- Link for the working frontend application : ``` http://mo-udagram-bucket1.s3-website-us-east-1.amazonaws.com  ```
 
 - The backend api is a node.js Typescript application using express framework and hosted on AWS Elastic beanstalk service 
 
