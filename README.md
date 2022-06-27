@@ -2,15 +2,25 @@
 
 ## Infrastructure description 
 
--The application contains frontend , backend and relational database 
+- The application contains frontend , backend and relational database 
 
--The frontend is Angular - ionic application and is hosted on S3 bucket on AWS cloud
+- The frontend is Angular - ionic application and is hosted on S3 bucket on AWS cloud
+
+- Link for the frontEnd App : 
+---
+
+```  http://mo-udagram-bucket1.s3-website-us-east-1.amazonaws.com  ```
+
+---
 
 - The backend api is a node.js Typescript application using express framework and hosted on AWS Elastic beanstalk service 
 
 - The relational database is using postgreSQL as a database engine and hosted on AWS RDS service on the cloud 
 
 - The three services of the aws infrastructure is communicating to host the application
+
+
+### More info can be found in the Infrastructure-description.md file in docs/diagrams directory
 
 
 ## App dependencies 
@@ -46,6 +56,8 @@
 5. POSTGRES_DB="Database name"
 
 
+### More info can be found in the App-depenedencies.md file in docs/diagrams directory
+
 ## Pipeline Process 
 
 - The pipeline as a service platform used for CICD is CircleCi 
@@ -54,9 +66,13 @@
 
 - The code pushed to github triggers the pipeline to execute since CircleCi detects config.yml file , builds the code and deploys on the aws infrastructure . The CircleCi also holds env variable for the aws access keys 
 
+### More info can be found in the Pipeline-process.md file in docs/diagrams directory
+
 
 ### Diagrams for the aws infrastructure exist in docs directory
 
 ### ScreenShots for CircleCi and AWS Console exists in docs directory
+
+### More info can be found in the md files in docs/diagrams directory
 
 
